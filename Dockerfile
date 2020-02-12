@@ -2,11 +2,7 @@ FROM alpine:3.5
 MAINTAINER Jan Kunzmann <jan-docker@phobia.de>
 
 RUN apk add --no-cache python2 py2-flask py2-crypto py-setuptools uwsgi uwsgi-python git \
-<<<<<<< HEAD
  && git clone https://github.com/Spudmaster1991/d-note /build \
-=======
- && https://github.com/Spudmaster1991/d-note /build \
->>>>>>> ec325f2e8417f176c4bfa2eca38a5053a7cdc0f3
  && cd /build \
  && python setup.py install \
  && cd / \
