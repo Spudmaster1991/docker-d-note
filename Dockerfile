@@ -2,7 +2,7 @@ FROM alpine:3.5
 MAINTAINER Jan Kunzmann <jan-docker@phobia.de>
 
 RUN apk add --no-cache python2 py2-pip py2-flask py2-crypto py-setuptools uwsgi uwsgi-python git \
- && pip install Flask-Limiter
+ && pip install Flask-Limiter \
  && git clone https://github.com/Spudmaster1991/d-note /build \
  && cd /build \
  && python setup.py install \
