@@ -17,7 +17,8 @@ ENV APPLICATION_ROOT=/
 ENV PROCESSES=1
 ENV THREADS=2
 
-VOLUME /dnote
+# Use different volume bind
+# VOLUME /dnote
 EXPOSE 8080
 
 CMD [ "/usr/local/bin/uwsgi-http-dnote.sh" ]
